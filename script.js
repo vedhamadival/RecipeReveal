@@ -1,5 +1,5 @@
 //Loading the Random image and Name
-function loadRandomImage() {
+function loadRandomImage(){
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
         .then(response => response.json())
         .then(data => {
@@ -17,7 +17,6 @@ function loadRandomImage() {
                 mealNameElement.textContent = randomMeal.strMeal;
 
                 ShowcaseIngredients(randomMeal);
-
             }
         })
         .catch(error => {
@@ -70,6 +69,26 @@ const close = document.querySelector("#close")
 close.addEventListener("click",()=>{
     document.getElementById("box").style.display = "none";
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const searchInput = document.getElementById('input');
@@ -131,7 +150,6 @@ getMeals();
 
 
 
-//from chatgpt
 (function scroll(){
     // document.addEventListener("DOMContentLoaded", function() {
     //     // Find the button element by its id
@@ -145,7 +163,7 @@ getMeals();
             // Scroll to the target element when the button is clicked
             scrollTarget.scrollIntoView({ behavior: "smooth" });
         });
-    })();
+})();
 
 
 
