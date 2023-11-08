@@ -15,14 +15,17 @@
         justify-content: center;
         align-items: center;
     }
+    #logo{
+        margin-top:100px;
+    }
     span{
         font-size: 100px;
         font-weight: 900;
         font-family: 'itim',cursive;
-        margin-top:200px;
+        margin-top:20px;
     }
     p{
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 500;
         font-family: 'itim',cursive;
     }
@@ -40,11 +43,14 @@
     }
 
     @media (max-width:768px){
+    #logo{
+        margin-top: 200px;
+        }
     span{
         font-size: 50px;
         font-weight: 900;
         font-family: 'itim',cursive;
-        margin-top:250px;
+        margin-top:20px;
     }
     p{
         font-size: 25px;
@@ -66,6 +72,7 @@
     }
 </style>
 <body>
+    <img id="logo" src="https://cdn-icons-png.flaticon.com/128/1721/1721455.png" height="120px">
     <span> RecipeReveal </span>
     <p>WhereTasteBudsUnite</p>
     <button id="button">Get Recipes</button>
@@ -74,7 +81,6 @@
     const btn = document.getElementById("button")
     btn.addEventListener('click', () => {
         window.location.href= "Main.html"
-    // console.log("Hello");
     })
 </script>
 </html>
