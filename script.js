@@ -23,9 +23,7 @@ function loadRandomImage(){
             console.error('Error loading random image:', error);
         });
 }
-// Load a random image when the page initially loads
 loadRandomImage();
-
 
 
 
@@ -53,7 +51,9 @@ function ShowcaseIngredients(randomMeal) {
     }
     console.log(measurements , ingredients)
 }
-// Add a click event listener to the #randommeal-Container
+
+
+
 document.getElementById('randommeal-Container').addEventListener('click', Showingredients);
 
 function Showingredients(){
@@ -75,27 +75,8 @@ close.addEventListener("click",()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const searchInput = document.getElementById('input');
 const searchResults = document.getElementById('search-results');
-
-
-
 
 //function for searching the meals
 function getMeals(){
@@ -150,17 +131,13 @@ getMeals();
 
 
 
+
+
+
 (function scroll(){
-    // document.addEventListener("DOMContentLoaded", function() {
-    //     // Find the button element by its id
         var searchbutton = document.getElementById("search-button");
-    
-        // Find the target element by its id
         var scrollTarget = document.getElementById("topic2");
-    
-        // Add a click event listener to the button
         searchbutton.addEventListener("click", function() {
-            // Scroll to the target element when the button is clicked
             scrollTarget.scrollIntoView({ behavior: "smooth" });
         });
 })();

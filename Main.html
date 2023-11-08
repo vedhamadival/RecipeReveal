@@ -3,52 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/1721/1721455.png">
-    <title>RecipeReveal</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>GetRecipes</title>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-    body{
-        background-color: #FFB906;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    span{
-        font-size: 100px;
-        font-weight: 900;
-        font-family: 'itim',cursive;
-        margin-top:200px;
-    }
-    p{
-        font-size: 50px;
-        font-weight: 500;
-        font-family: 'itim',cursive;
-    }
-    button{
-        background-color: #FFF2CF;
-        padding: auto;
-        border: none;
-        border-radius: 10px;
-        height: 50px;
-        width: 150px;
-        text-align: center;
-        font-family: 'itim' ,cursive;
-        font-size: 20px;
-        font-weight: 500;
-    }
-</style>
+
+    
 <body>
-    <span> RecipeReveal </span>
-    <p>WhereTasteBudsUnite</p>
-    <button id="button">Get Recipes</button>
+    <header>
+        <div>
+            <p id="main"><img src="https://cdn-icons-png.flaticon.com/128/1721/1721455.png" height="80px">Recipe Reveal</p>
+        </div>
+    </header>
+
+
+    <div id="desc">
+    <p id="desc1">Welcome to 'Recipe Reveal' - Your<br>
+        Daily Culinary Companion!</p>
+    <p id="desc2">Tired of the daily dilemma of what to cook for breakfast, lunch, or dinner? Look no 
+        <br> further. 'Recipe Reveal' is your one-stop destination for daily recipes that will free
+        <br> you from the endless cycle of meal planning and leave your taste buds delighted.</p>
+    </div>
+
+
+    <div id="searchbar">
+        <p id="searchtext">Search for Categories...</p>
+        <div>
+            <input id="input" placeholder="Search">
+            <button id="search-button"><img src="https://cdn-icons-png.flaticon.com/128/49/49116.png" height="20px"></button>
+        </div>
+    </div>
+
+    
+        <div id= "topic">
+            Meal Of The Day:
+        </div>
+
+
+        <div id="randommeal">
+        <div id="randommeal-Container"></div>
+        <p id="meal-name"></p>
+        </div>
+
+
+        <div id="box" style="display: none;">
+            <img id="close" src="https://cdn-icons-png.flaticon.com/128/1/1193.png" height="40px">
+            <h1>Recipe Reveal</h1><br>
+            <p id="subtopic">Measurements and Ingredients</p><br>
+            <li id="ingredients-list">
+            </li>
+        </div>
+
+        <div id= "topic2">
+        </div>
+
+        <div id="search-results">
+        </div>
+
+        <div id="">
+        </div>
+
+
+<script src="script.js"></script>
 </body>
-<script>
-    const btn = document.getElementById("button")
-    btn.addEventListener('click', () => {
-        window.location.href= "index.html"
-    // console.log("Hello");
-    })
-</script>
 </html>
