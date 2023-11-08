@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/1721/1721455.png">
+    <title>RecipeReveal</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+    body{
+        background-color: #FFB906;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    span{
+        font-size: 100px;
+        font-weight: 900;
+        font-family: 'itim',cursive;
+        margin-top:200px;
+    }
+    p{
+        font-size: 50px;
+        font-weight: 500;
+        font-family: 'itim',cursive;
+    }
+    button{
+        background-color: #FFF2CF;
+        padding: auto;
+        border: none;
+        border-radius: 10px;
+        height: 50px;
+        width: 150px;
+        text-align: center;
+        font-family: 'itim' ,cursive;
+        font-size: 20px;
+        font-weight: 500;
+    }
+</style>
+<body>
+    <span> RecipeReveal </span>
+    <p>WhereTasteBudsUnite</p>
+    <button id="button">Get Recipes</button>
+</body>
+<script>
+    const btn = document.getElementById("button")
+    btn.addEventListener('click', () => {
+        window.location.href= "index.html"
+    // console.log("Hello");
+    })
+</script>
+</html>
