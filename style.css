@@ -150,7 +150,7 @@ header{
     padding: 20px;
     height: 500px;
     width: 500px;
-    overflow:scroll;
+    overflow-y:scroll;
 }
 
 #ingredients-list {
